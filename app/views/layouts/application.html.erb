@@ -12,5 +12,8 @@
 
   <body>
     <%= yield %>
+
+    <%= turbo_frame_tag :popover do %>
+    <% end %>
   </body>
 </html>

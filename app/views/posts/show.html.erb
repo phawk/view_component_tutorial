@@ -33,7 +33,7 @@
         <span class="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">Latest post</span>
         <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"><%= @post.title %></span>
       </h1>
-      <p class="text-center text-sm mt-2"><%= link_to "Edit post", edit_post_path(@post), class: "text-indigo-600 underline" %></p>
+      <p class="text-center text-sm mt-2"><%= link_to "Edit post", edit_post_path(@post), data: { turbo_frame: "popover" }, class: "text-indigo-600 underline" %></p>
     </div>
     <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
       <%= simple_format(@post.body) %>
